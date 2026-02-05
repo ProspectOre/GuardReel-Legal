@@ -3,125 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - GuardReel</title>
+    <title>GuardReel Privacy Policy</title>
     <style>
         :root {
-            --bg: #000;
-            --text: #fff;
-            --text-secondary: #888;
-            --accent: #E31937;
-            --card-bg: #111;
+            --bg: #0a0a0a;
+            --text: #e5e5e5;
+            --text-secondary: #a0a0a0;
+            --accent: #e31937;
+            --border: #2a2a2a;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background: var(--bg);
             color: var(--text);
+            line-height: 1.7;
             padding: 40px 20px;
-            line-height: 1.6;
         }
-        .container { max-width: 700px; margin: 0 auto; }
-        .back { color: var(--accent); text-decoration: none; font-size: 14px; }
-        h1 { font-size: 28px; margin: 20px 0 8px; }
-        .updated { color: var(--text-secondary); margin-bottom: 32px; font-size: 14px; }
-        h2 { font-size: 20px; margin: 32px 0 12px; color: var(--accent); }
-        h3 { font-size: 16px; margin: 20px 0 8px; }
-        p { margin-bottom: 16px; color: #ccc; }
-        ul { margin: 0 0 16px 24px; color: #ccc; }
-        li { margin-bottom: 8px; }
-        a { color: var(--accent); }
-        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #222; text-align: center; color: var(--text-secondary); font-size: 12px; }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        .last-updated {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+        p, li {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+        ul, ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        strong {
+            color: var(--text);
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background: #1a1a1a;
+            border-left: 3px solid var(--accent);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight p {
+            margin-bottom: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        th {
+            color: #fff;
+            font-weight: 600;
+        }
+        td {
+            color: var(--text-secondary);
+        }
+        .toc {
+            background: #111;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .toc h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .toc ol {
+            margin-bottom: 0;
+        }
+        .toc a {
+            color: var(--text-secondary);
+        }
+        .toc a:hover {
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="./" class="back">← Back to Legal</a>
         <h1>Privacy Policy</h1>
-        <p class="updated">Last Updated: January 29, 2026</p>
+        <p class="last-updated"><strong>Last Updated:</strong> February 5, 2026 &nbsp;|&nbsp; <strong>Effective Date:</strong> February 5, 2026</p>
 
-        <p>GuardReel ("we", "our", or "us") operates the GuardReel mobile application (the "App"). This Privacy Policy explains how we collect, use, and protect your information when you use our App.</p>
-
-        <h2>Information We Collect</h2>
-
-        <h3>1. Video Data (Local Only)</h3>
-        <ul>
-            <li><strong>Tesla Dashcam Videos:</strong> The App processes Tesla dashcam videos stored on your device or connected USB drives</li>
-            <li><strong>Embedded Telemetry:</strong> Speed, GPS coordinates, steering angle, and other vehicle data embedded in Tesla video files</li>
-            <li><strong>Storage:</strong> All video processing occurs locally on your device. We do not upload, transmit, or store your videos on any servers</li>
-        </ul>
-
-        <h3>2. Analytics Data</h3>
-        <p>We use Firebase Analytics to collect anonymous usage data to improve the App:</p>
-        <ul>
-            <li>App opens and screen views</li>
-            <li>Feature usage (exports, layouts used)</li>
-            <li>Device type and iOS version</li>
-            <li>Crash reports and performance data</li>
-        </ul>
-        <p>This data is anonymized and cannot be used to identify you personally.</p>
-
-        <h3>3. Advertising Data</h3>
-        <p>We use Google AdMob to display advertisements:</p>
-        <ul>
-            <li><strong>With Tracking Permission:</strong> If you allow tracking via App Tracking Transparency (ATT), ads may be personalized based on your interests</li>
-            <li><strong>Without Tracking Permission:</strong> You will see contextual (non-personalized) ads</li>
-            <li>AdMob may collect device identifiers and ad interaction data per <a href="https://policies.google.com/privacy">Google's Privacy Policy</a></li>
-        </ul>
-
-        <h3>4. App Tracking Transparency (ATT)</h3>
-        <p>iOS requires us to ask permission before tracking your activity across other companies' apps and websites. You can:</p>
-        <ul>
-            <li><strong>Allow Tracking:</strong> Receive personalized ads</li>
-            <li><strong>Deny Tracking:</strong> Receive non-personalized ads (the App functions identically either way)</li>
-            <li>Change your choice anytime in iOS Settings > Privacy & Security > Tracking</li>
-        </ul>
-
-        <h2>How We Use Your Information</h2>
-        <ul>
-            <li><strong>Video Processing:</strong> To edit, combine, and export your Tesla dashcam footage</li>
-            <li><strong>Analytics:</strong> To understand how users interact with the App and improve features</li>
-            <li><strong>Advertising:</strong> To display ads and support free access to the App</li>
-            <li><strong>Crash Reporting:</strong> To identify and fix bugs</li>
-        </ul>
-
-        <h2>Data Sharing</h2>
-        <p>We do not sell your personal information. We share data only with:</p>
-        <ul>
-            <li><strong>Google Firebase:</strong> Analytics and crash reporting</li>
-            <li><strong>Google AdMob:</strong> Advertising services</li>
-            <li><strong>Apple:</strong> App Store analytics (if enabled in your Apple ID settings)</li>
-        </ul>
-
-        <h2>Data Retention</h2>
-        <ul>
-            <li><strong>Video Data:</strong> Never leaves your device; deleted when you remove videos</li>
-            <li><strong>Analytics Data:</strong> Retained by Firebase per their data retention policies</li>
-            <li><strong>Ad Data:</strong> Managed by Google per their privacy policy</li>
-        </ul>
-
-        <h2>Your Rights</h2>
-        <p>You can:</p>
-        <ul>
-            <li>Deny tracking permission via ATT prompt or iOS Settings</li>
-            <li>Request deletion of analytics data by contacting us</li>
-            <li>Opt out of personalized ads via iOS Settings > Privacy & Security > Apple Advertising</li>
-        </ul>
-
-        <h2>Children's Privacy</h2>
-        <p>The App is not intended for children under 13. We do not knowingly collect data from children.</p>
-
-        <h2>Security</h2>
-        <p>We implement industry-standard security measures. All video processing occurs locally on your device, minimizing data exposure.</p>
-
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy. Changes will be posted here with an updated "Last Updated" date.</p>
-
-        <h2>Contact Us</h2>
-        <p>For privacy questions or data requests, please contact us through the App Store listing or leave a review with your concern and we will respond promptly.</p>
-
-        <div class="footer">
-            <p>This privacy policy is designed to comply with Apple App Store requirements, GDPR, and CCPA.</p>
+        <div class="highlight">
+            <p><strong>Summary:</strong> GuardReel processes your Tesla dashcam videos entirely on your device. We collect anonymized analytics to improve the app and display ads to keep it free. We never upload your videos to any server, and we do not sell your personal information.</p>
         </div>
+
+        <nav class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#information-we-collect">Information We Collect</a></li>
+                <li><a href="#how-we-use-information">How We Use Your Information</a></li>
+                <li><a href="#advertising">Advertising</a></li>
+                <li><a href="#third-party-services">Third-Party Services</a></li>
+                <li><a href="#data-sharing">Data Sharing and Disclosure</a></li>
+                <li><a href="#data-retention">Data Retention</a></li>
+                <li><a href="#data-security">Data Security</a></li>
+                <li><a href="#your-rights">Your Privacy Rights</a></li>
+                <li><a href="#international">International Data Transfers</a></li>
+                <li><a href="#children">Children's Privacy</a></li>
+                <li><a href="#changes">Changes to This Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ol>
+        </nav>
+
+        <h2 id="introduction">1. Introduction</h2>
+        <p>GuardReel ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application GuardReel (the "App").</p>
+        <p>By downloading, installing, or using the App, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use the App.</p>
+
+        <h2 id="information-we-collect">2. Information We Collect</h2>
+
+        <h3>2.1 Video and Telemetry Data (Processed Locally)</h3>
+        <p>The App processes Tesla dashcam video files that you import from USB drives or your device storage. These videos may contain embedded telemetry data including:</p>
+        <ul>
+            <li>Vehicle speed</li>
+            <li>GPS coordinates and location data</li>
+            <li>Steering angle</li>
+            <li>Gear position</li>
+            <li>Autopilot/FSD status</li>
+            <li>Timestamps</li>
+        </ul>
+        <div class="highlight">
+            <p><strong>Important:</strong> All video and telemetry processing occurs entirely on your device. We do not upload, transmit, or store your videos or telemetry data on any external servers. Your video content never leaves your device unless you choose to share or export it.</p>
+        </div>
+
+        <h3>2.2 Analytics Data (Collected Automatically)</h3>
+        <p>We automatically collect certain information when you use the App to help us understand usage patterns and improve our services:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Examples</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Usage Data</td>
+                    <td>Features used, screens viewed, button taps</td>
+                    <td>Improve app functionality</td>
+                </tr>
+                <tr>
+                    <td>Device Information</td>
+                    <td>Device model, iOS version, screen size</td>
+                    <td>Optimize compatibility</td>
+                </tr>
+                <tr>
+                    <td>Performance Data</td>
+                    <td>Load times, export duration, memory usage</td>
+                    <td>Performance optimization</td>
+                </tr>
+                <tr>
+                    <td>Crash Data</td>
+                    <td>Crash logs, error reports, stack traces</td>
+                    <td>Bug fixes and stability</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>This data is collected in an anonymized or pseudonymized form and cannot be used to directly identify you personally.</p>
+
+        <h3>2.3 Advertising Identifiers</h3>
+        <p>If you grant permission through Apple's App Tracking Transparency (ATT) prompt, we may collect:</p>
+        <ul>
+            <li><strong>Identifier for Advertisers (IDFA):</strong> Used to deliver personalized advertisements and measure ad effectiveness</li>
+        </ul>
+        <p>If you deny tracking permission, we do not collect your IDFA and you will only see contextual (non-personalized) advertisements.</p>
+
+        <h3>2.4 Information We Do NOT Collect</h3>
+        <ul>
+            <li>Your name, email address, or contact information (unless you contact us)</li>
+            <li>Your Apple ID or account credentials</li>
+            <li>Your existing photos or videos (we only access files you explicitly import)</li>
+            <li>Your location in real-time (GPS data comes only from your Tesla video files)</li>
+            <li>Contacts, calendar, or other personal data</li>
+        </ul>
+
+        <h2 id="how-we-use-information">3. How We Use Your Information</h2>
+        <p>We use the information we collect for the following purposes:</p>
+        <ul>
+            <li><strong>Provide Core Functionality:</strong> Process and edit your Tesla dashcam videos locally on your device</li>
+            <li><strong>Display Advertisements:</strong> Show ads to support the free version of the App</li>
+            <li><strong>Improve the App:</strong> Analyze usage patterns to add features and fix issues</li>
+            <li><strong>Ensure Stability:</strong> Monitor crash reports to identify and resolve bugs</li>
+            <li><strong>Optimize Performance:</strong> Measure and improve app speed and efficiency</li>
+            <li><strong>Comply with Legal Obligations:</strong> Respond to legal requests when required</li>
+        </ul>
+
+        <h2 id="advertising">4. Advertising</h2>
+
+        <h3>4.1 Ad-Supported Model</h3>
+        <p>GuardReel is a free app supported by advertisements provided by Google AdMob. Ads help us keep the App free while continuing to develop new features.</p>
+
+        <h3>4.2 Personalized vs. Non-Personalized Ads</h3>
+        <p>The type of ads you see depends on your App Tracking Transparency choice:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Your Choice</th>
+                    <th>Ad Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Allow Tracking</strong></td>
+                    <td>Personalized ads based on your interests and activity across apps. Ad partners may use your IDFA to measure ad effectiveness.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ask App Not to Track</strong></td>
+                    <td>Contextual ads that are not based on your personal data. You still see ads, but they are generic and not tailored to you.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>4.3 Ad Partner Data Practices</h3>
+        <p>Google AdMob may collect and process data according to their own privacy policies. For more information:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How Google uses information from AdMob</a></li>
+        </ul>
+
+        <h3>4.4 Managing Ad Preferences</h3>
+        <p>You can control personalized advertising through:</p>
+        <ul>
+            <li><strong>iOS Settings:</strong> Settings → Privacy & Security → Tracking</li>
+            <li><strong>In-App (EU Users):</strong> Settings → Ad Privacy Settings (for GDPR consent management)</li>
+            <li><strong>Google Ad Settings:</strong> <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a></li>
+        </ul>
+
+        <h2 id="third-party-services">5. Third-Party Services</h2>
+        <p>The App integrates the following third-party services:</p>
+
+        <h3>5.1 Google Firebase</h3>
+        <ul>
+            <li><strong>Firebase Analytics:</strong> Collects anonymized usage statistics</li>
+            <li><strong>Firebase Crashlytics:</strong> Collects crash reports and diagnostic data</li>
+        </ul>
+        <p>Firebase data is processed by Google. See the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a>.</p>
+
+        <h3>5.2 Google AdMob</h3>
+        <p>Displays advertisements and may collect advertising identifiers if permitted. See Section 4 for details.</p>
+
+        <h3>5.3 Apple Frameworks</h3>
+        <ul>
+            <li><strong>Photos Framework:</strong> Used only when you choose to save exported videos to your Photos library</li>
+            <li><strong>MapKit:</strong> Used to display route maps in the dashboard overlay (map tiles loaded from Apple; your location is not shared)</li>
+            <li><strong>App Tracking Transparency:</strong> Manages your tracking preferences</li>
+        </ul>
+
+        <h2 id="data-sharing">6. Data Sharing and Disclosure</h2>
+
+        <h3>6.1 We Do NOT Sell Your Data</h3>
+        <div class="highlight">
+            <p><strong>We do not sell, rent, or trade your personal information to third parties for their marketing purposes.</strong></p>
+        </div>
+
+        <h3>6.2 Limited Sharing</h3>
+        <p>We may share information only in these circumstances:</p>
+        <ul>
+            <li><strong>Service Providers:</strong> With Google (Firebase, AdMob) as described above, solely to provide app functionality and advertising</li>
+            <li><strong>Legal Requirements:</strong> When required by law, court order, or governmental authority</li>
+            <li><strong>Safety:</strong> To protect the rights, safety, or property of our users or the public</li>
+            <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets (you would be notified)</li>
+        </ul>
+
+        <h3>6.3 Your Content</h3>
+        <p>We never access, view, or share the videos you import or create. Your content remains entirely under your control on your device.</p>
+
+        <h2 id="data-retention">7. Data Retention</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Retention Period</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Video/Telemetry Data</td>
+                    <td>Stored locally on your device until you delete it. We never receive this data.</td>
+                </tr>
+                <tr>
+                    <td>Analytics Data</td>
+                    <td>Retained by Firebase for up to 14 months, then automatically deleted or aggregated.</td>
+                </tr>
+                <tr>
+                    <td>Crash Reports</td>
+                    <td>Retained by Crashlytics for 90 days.</td>
+                </tr>
+                <tr>
+                    <td>Advertising Data</td>
+                    <td>Managed by Google per their retention policies.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="data-security">8. Data Security</h2>
+        <p>We implement appropriate technical and organizational measures to protect your information:</p>
+        <ul>
+            <li><strong>Local Processing:</strong> Video and telemetry data never leaves your device</li>
+            <li><strong>Encryption in Transit:</strong> All data transmitted to third-party services uses HTTPS/TLS encryption</li>
+            <li><strong>Minimal Data Collection:</strong> We only collect what is necessary for app functionality</li>
+            <li><strong>No Account Required:</strong> We don't store personal credentials or account information</li>
+        </ul>
+        <p>However, no method of transmission or storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
+
+        <h2 id="your-rights">9. Your Privacy Rights</h2>
+
+        <h3>9.1 All Users</h3>
+        <p>Regardless of your location, you can:</p>
+        <ul>
+            <li><strong>Control Tracking:</strong> Use iOS Settings to manage App Tracking Transparency</li>
+            <li><strong>Delete Local Data:</strong> Remove all app data by deleting the App from your device</li>
+            <li><strong>Opt-Out of Analytics:</strong> Contact us to request deletion of your analytics data</li>
+            <li><strong>Manage Ad Preferences:</strong> Adjust personalized ad settings through iOS or Google</li>
+        </ul>
+
+        <h3>9.2 European Economic Area (EEA) Residents — GDPR</h3>
+        <p>If you are located in the EEA, you have additional rights under the General Data Protection Regulation (GDPR):</p>
+        <ul>
+            <li><strong>Right of Access:</strong> Request a copy of the personal data we hold about you</li>
+            <li><strong>Right to Rectification:</strong> Request correction of inaccurate data</li>
+            <li><strong>Right to Erasure:</strong> Request deletion of your personal data ("right to be forgotten")</li>
+            <li><strong>Right to Restrict Processing:</strong> Request that we limit how we use your data</li>
+            <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format</li>
+            <li><strong>Right to Object:</strong> Object to processing of your data for certain purposes</li>
+            <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time where processing is based on consent</li>
+            <li><strong>Right to Lodge a Complaint:</strong> File a complaint with your local data protection authority</li>
+        </ul>
+        <p><strong>Legal Basis for Processing:</strong> We process your data based on:</p>
+        <ul>
+            <li><strong>Consent:</strong> For personalized advertising (via ATT and GDPR consent)</li>
+            <li><strong>Legitimate Interest:</strong> For analytics and crash reporting to improve the App</li>
+            <li><strong>Contract Performance:</strong> To provide the App's core video editing functionality</li>
+        </ul>
+
+        <h3>9.3 California Residents — CCPA/CPRA</h3>
+        <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA):</p>
+        <ul>
+            <li><strong>Right to Know:</strong> Request disclosure of the categories and specific pieces of personal information we collect</li>
+            <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
+            <li><strong>Right to Correct:</strong> Request correction of inaccurate personal information</li>
+            <li><strong>Right to Opt-Out of Sale/Sharing:</strong> We do not sell your personal information. If you deny ATT permission, we do not share your data for cross-context behavioral advertising.</li>
+            <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your rights</li>
+        </ul>
+        <p><strong>Categories of Personal Information Collected:</strong></p>
+        <ul>
+            <li>Identifiers (device identifiers, IDFA if permitted)</li>
+            <li>Internet/electronic network activity (app usage, crash data)</li>
+            <li>Geolocation data (only from Tesla video files you import, not real-time)</li>
+        </ul>
+        <p><strong>"Do Not Sell or Share My Personal Information":</strong> We do not sell personal information. Denying ATT permission prevents sharing for targeted advertising.</p>
+
+        <h3>9.4 Other Jurisdictions</h3>
+        <p>If you are located in another jurisdiction with data protection laws (e.g., Brazil's LGPD, Canada's PIPEDA, UK GDPR), you may have similar rights. Please contact us to exercise your rights.</p>
+
+        <h3>9.5 How to Exercise Your Rights</h3>
+        <p>To exercise any of your privacy rights, please contact us at:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:privacy@prospectore.com">privacy@prospectore.com</a></li>
+        </ul>
+        <p>We will respond to your request within 30 days (or sooner if required by law). We may need to verify your identity before processing certain requests.</p>
+
+        <h2 id="international">10. International Data Transfers</h2>
+        <p>Your information may be transferred to and processed in countries other than your own, including the United States, where our service providers (Google) operate. These countries may have different data protection laws than your jurisdiction.</p>
+        <p>For EEA users, transfers to the US are conducted under appropriate safeguards, including:</p>
+        <ul>
+            <li>Standard Contractual Clauses approved by the European Commission</li>
+            <li>The EU-US Data Privacy Framework (where applicable)</li>
+        </ul>
+
+        <h2 id="children">11. Children's Privacy</h2>
+        <div class="highlight">
+            <p><strong>GuardReel is not intended for children under the age of 13</strong> (or 16 in certain jurisdictions). We do not knowingly collect personal information from children.</p>
+        </div>
+        <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately. If we discover that we have collected personal information from a child without parental consent, we will take steps to delete that information.</p>
+
+        <h2 id="changes">12. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we make material changes, we will:</p>
+        <ul>
+            <li>Update the "Last Updated" date at the top of this page</li>
+            <li>Notify you through the App or App Store update notes for significant changes</li>
+        </ul>
+        <p>Your continued use of the App after changes become effective constitutes acceptance of the revised policy. We encourage you to review this policy periodically.</p>
+
+        <h2 id="contact">13. Contact Us</h2>
+        <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:privacy@prospectore.com">privacy@prospectore.com</a></li>
+            <li><strong>Support:</strong> <a href="mailto:support@prospectore.com">support@prospectore.com</a></li>
+        </ul>
+        <p>For EEA residents, you also have the right to lodge a complaint with your local supervisory authority.</p>
+
+        <hr style="margin: 3rem 0; border: none; border-top: 1px solid var(--border);">
+        <p style="text-align: center; color: var(--text-secondary);">
+            &copy; 2026 GuardReel. All rights reserved.<br>
+            <a href="terms-of-service.html">Terms of Service</a> &nbsp;|&nbsp; <a href="index.html">Support</a>
+        </p>
     </div>
 </body>
 </html>

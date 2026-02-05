@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuardReel Legal</title>
+    <title>GuardReel Support</title>
     <style>
         :root {
-            --bg: #000;
-            --text: #fff;
-            --text-secondary: #888;
-            --accent: #E31937;
-            --card-bg: #111;
+            --bg: #0a0a0a;
+            --text: #e5e5e5;
+            --text-secondary: #a0a0a0;
+            --accent: #e31937;
+            --border: #2a2a2a;
         }
         * {
             margin: 0;
@@ -18,84 +18,212 @@
             box-sizing: border-box;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background: var(--bg);
             color: var(--text);
+            line-height: 1.7;
             min-height: 100vh;
-            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
         }
         .container {
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
         }
         .logo {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 8px;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--accent) 0%, #b8152d 100%);
+            border-radius: 22px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
         }
-        .logo span {
-            color: var(--accent);
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
         }
-        .subtitle {
+        .tagline {
             color: var(--text-secondary);
-            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+        .section {
+            margin-bottom: 3rem;
         }
         .card {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 16px;
-            text-decoration: none;
-            display: block;
-            transition: transform 0.2s, background 0.2s;
+            background: #111;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
         }
-        .card:hover {
-            transform: translateY(-2px);
-            background: #1a1a1a;
-        }
-        .card h2 {
-            color: var(--text);
-            font-size: 20px;
-            margin-bottom: 8px;
+        .card h3 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         .card p {
             color: var(--text-secondary);
-            font-size: 14px;
-            line-height: 1.5;
+            margin-bottom: 1rem;
         }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 12px;
-        }
-        .footer a {
+        .card a {
             color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 1.25rem 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .faq-answer {
+            color: var(--text-secondary);
+        }
+        .links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+        .links a:hover {
+            color: var(--accent);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+        }
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+        .email-link:hover {
+            background: #c91530;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">Guard<span>Reel</span></div>
-        <p class="subtitle">Legal Documents</p>
+        <header class="header">
+            <div class="logo">🎬</div>
+            <h1>GuardReel</h1>
+            <p class="tagline">Tesla Dashcam Editor for iOS</p>
+        </header>
 
-        <a href="privacy-policy" class="card">
-            <h2>Privacy Policy</h2>
-            <p>Learn how GuardReel handles your data, including video processing, analytics, and advertising.</p>
-        </a>
+        <section class="section">
+            <h2>Contact Support</h2>
+            <div class="card">
+                <h3>📧 Email Support</h3>
+                <p>Have a question, issue, or feedback? We're here to help.</p>
+                <a href="mailto:support@prospectore.com" class="email-link">
+                    support@prospectore.com
+                </a>
+            </div>
+        </section>
 
-        <a href="terms-of-service" class="card">
-            <h2>Terms of Service</h2>
-            <p>Read the terms and conditions for using the GuardReel app.</p>
-        </a>
+        <section class="section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="card">
+                <div class="faq-item">
+                    <div class="faq-question">How do I import my Tesla dashcam clips?</div>
+                    <div class="faq-answer">Connect your Tesla USB drive to your iPhone/iPad using a USB-C adapter or Lightning to USB adapter. Then tap "Import" in the app and select "Intelligent Scan" to automatically find all your clips.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Why are some cameras missing in my clips?</div>
+                    <div class="faq-answer">This usually means those camera angles weren't recording at the time. Older Tesla vehicles (HW3) have 4 cameras, while newer vehicles (HW4) have 6 cameras including pillar cameras.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Why is the telemetry data missing?</div>
+                    <div class="faq-answer">Telemetry data (speed, GPS, etc.) is only available in Sentry Mode clips. Recent Clips and Saved Clips from the dashcam feature typically don't include telemetry.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I export in higher quality?</div>
+                    <div class="faq-answer">Tap the Export button and select your desired quality level. Higher resolutions like 4K require more processing time and storage space.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I remove the watermark?</div>
+                    <div class="faq-answer">The watermark is included in the free version of GuardReel. Thank you for understanding that it helps support continued development of the app.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is my video data uploaded anywhere?</div>
+                    <div class="faq-answer">No. All video processing happens entirely on your device. Your videos never leave your phone or tablet unless you choose to share them yourself.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I change the camera in a layout slot?</div>
+                    <div class="faq-answer">Tap and hold on any camera view in the preview to open the camera selection menu. You can assign any available camera to any slot.</div>
+                </div>
+            </div>
+        </section>
 
-        <div class="footer">
-            <p>Last updated: January 27, 2026</p>
-            <p style="margin-top: 8px;">
-                GitHub Issues
-            </p>
+        <section class="section">
+            <h2>Legal</h2>
+            <div class="card">
+                <h3>📄 Privacy Policy</h3>
+                <p>Learn how we collect, use, and protect your information.</p>
+                <a href="privacy-policy.html">Read Privacy Policy →</a>
+            </div>
+            <div class="card">
+                <h3>📋 Terms of Service</h3>
+                <p>The terms and conditions for using GuardReel.</p>
+                <a href="terms-of-service.html">Read Terms of Service →</a>
+            </div>
+        </section>
+
+        <div class="links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="mailto:support@prospectore.com">Contact</a>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 GuardReel. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+            GuardReel is not affiliated with Tesla, Inc.
+        </p>
+    </footer>
 </body>
 </html>
